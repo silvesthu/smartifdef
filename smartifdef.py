@@ -6,11 +6,9 @@ class SmartIfDefCommand(sublime_plugin.TextCommand):
 
     def __init__(self, *args, **kwargs):
         super(SmartIfDefCommand, self).__init__(*args, **kwargs)
-        settings = sublime.load_settings('smartifdef.sublime-settings')
-        self.defined_macros = settings.get('macros')
 
     def run(self, edit):
-        macros = set(self.defined_macros)
+        macros = set(sublime.load_settings('smartifdef.sublime-settings').get('macros'))
         macro = None
 
         scopes = deque()
