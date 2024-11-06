@@ -1,7 +1,5 @@
 {
-    // put C/C++ macro that project used for, eg: __GNU__, __ANDROID__
-    "cppmode.defined_tags": ["__ANDROID__"],
-
-    // put C/C++ macro that is not used for current project, eg: _WIN32, __WIN32__
-    "cppmode.not_defined_tags": ["_WIN32", "__WIN32__"],
+    "macros": 
+    [
+    ],
 }
